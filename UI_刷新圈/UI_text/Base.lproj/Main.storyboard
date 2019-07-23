@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zmo-Oy-eio">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Draw View Controller-->
+        <scene sceneID="5Wg-MS-Hzl">
+            <objects>
+                <viewController id="Zmo-Oy-eio" customClass="DrawViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Ip-97-5zR"/>
+                        <viewControllerLayoutGuide type="bottom" id="vZg-cR-O2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lkC-pF-ygF" customClass="DrawView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="j08-1y-ynA">
+                                <rect key="frame" x="122" y="354" width="118" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="chaged:" destination="Zmo-Oy-eio" eventType="valueChanged" id="Gk2-Hz-dZk"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="_drawView" destination="lkC-pF-ygF" id="6aa-D2-pEV"/>
+                        <outlet property="_slider" destination="j08-1y-ynA" id="96s-xJ-iHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cW-K1-HjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="377"/>
+        </scene>
+    </scenes>
+</document>

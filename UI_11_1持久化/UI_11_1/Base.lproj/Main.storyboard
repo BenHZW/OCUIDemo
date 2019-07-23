@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lna-7g-lbj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--文本持久化-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="StringFileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycy-TW-3s6">
+                                <rect key="frame" x="34" y="319" width="60" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="pRI-Sn-iSC"/>
+                                </constraints>
+                                <state key="normal" title="写入文件">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readOrWrite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZwO-YA-PzY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNf-Ci-1Rw">
+                                <rect key="frame" x="491" y="319" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="从文件读取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readOrWrite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TjD-z5-lPn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dos-RO-CdT">
+                                <rect key="frame" x="34" y="51" width="532" height="210"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dos-RO-CdT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="31" id="4VN-Ov-dYo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dos-RO-CdT" secondAttribute="trailing" constant="18" id="5gp-cg-Qwh"/>
+                            <constraint firstItem="cNf-Ci-1Rw" firstAttribute="trailing" secondItem="Dos-RO-CdT" secondAttribute="trailing" id="Olo-O8-ZCz"/>
+                            <constraint firstItem="cNf-Ci-1Rw" firstAttribute="top" secondItem="Dos-RO-CdT" secondAttribute="bottom" constant="58" id="Wgp-3Y-oLN"/>
+                            <constraint firstItem="Dos-RO-CdT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="18" id="d6z-Cl-lbv"/>
+                            <constraint firstItem="Dos-RO-CdT" firstAttribute="leading" secondItem="Ycy-TW-3s6" secondAttribute="leading" id="fXU-jC-kA9"/>
+                            <constraint firstItem="Ycy-TW-3s6" firstAttribute="top" secondItem="Dos-RO-CdT" secondAttribute="bottom" constant="58" id="icj-Y8-Z6k"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ycy-TW-3s6" secondAttribute="bottom" constant="202" id="l6e-n9-fzf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="文本持久化" id="RQS-dq-iG8"/>
+                    <connections>
+                        <outlet property="_textView" destination="Dos-RO-CdT" id="KDX-vM-SZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="240"/>
+        </scene>
+        <!--数组持久化-->
+        <scene sceneID="I8w-Eh-N3R">
+            <objects>
+                <viewController id="hLq-QF-QzB" customClass="ArrayFileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fEH-JN-gkp"/>
+                        <viewControllerLayoutGuide type="bottom" id="nzG-if-fFA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ONh-rO-0Iv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="数组持久化" id="1Li-ZN-3YI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5d-N5-bIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="1016"/>
+        </scene>
+        <!--学生持久化-->
+        <scene sceneID="8F8-pZ-Ta7">
+            <objects>
+                <viewController id="9GJ-Bd-C9s" customClass="StudentFileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hbr-51-ItN"/>
+                        <viewControllerLayoutGuide type="bottom" id="46a-uD-m4E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ppW-x3-1zS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学生年龄" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05A-4r-Ry2">
+                                <rect key="frame" x="63" y="98" width="474" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvT-RQ-Mvl">
+                                <rect key="frame" x="63" y="157" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="写入文件">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readOrWrite:" destination="9GJ-Bd-C9s" eventType="touchUpInside" id="CZ8-fL-UHz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P8-Tb-w6s">
+                                <rect key="frame" x="462" y="157" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="从文件读取">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readOrWrite:" destination="9GJ-Bd-C9s" eventType="touchUpInside" id="Vre-ei-iCn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学生姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fae-19-wPS">
+                                <rect key="frame" x="63" y="43" width="474" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7P8-Tb-w6s" firstAttribute="top" secondItem="05A-4r-Ry2" secondAttribute="bottom" constant="29" id="3Qw-TK-fyn"/>
+                            <constraint firstItem="05A-4r-Ry2" firstAttribute="trailing" secondItem="7P8-Tb-w6s" secondAttribute="trailing" id="6Og-Gv-hyx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fae-19-wPS" secondAttribute="trailing" constant="47" id="Az3-qW-1eV"/>
+                            <constraint firstItem="fae-19-wPS" firstAttribute="top" secondItem="Hbr-51-ItN" secondAttribute="bottom" constant="23" id="E5u-I0-MJR"/>
+                            <constraint firstItem="fae-19-wPS" firstAttribute="leading" secondItem="ppW-x3-1zS" secondAttribute="leadingMargin" constant="47" id="FNA-lA-R0y"/>
+                            <constraint firstItem="05A-4r-Ry2" firstAttribute="width" secondItem="fae-19-wPS" secondAttribute="width" id="Rl4-KI-5gQ"/>
+                            <constraint firstItem="AvT-RQ-Mvl" firstAttribute="top" secondItem="05A-4r-Ry2" secondAttribute="bottom" constant="29" id="UW9-QD-xKV"/>
+                            <constraint firstItem="AvT-RQ-Mvl" firstAttribute="leading" secondItem="05A-4r-Ry2" secondAttribute="leading" id="bvF-cw-dBR"/>
+                            <constraint firstItem="05A-4r-Ry2" firstAttribute="top" secondItem="fae-19-wPS" secondAttribute="bottom" constant="25" id="hfb-sg-p6S"/>
+                            <constraint firstItem="05A-4r-Ry2" firstAttribute="leading" secondItem="fae-19-wPS" secondAttribute="leading" id="qi6-TU-qZW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="学生持久化" id="L2c-Vp-HUu"/>
+                    <connections>
+                        <outlet property="_ageTextField" destination="05A-4r-Ry2" id="Vjj-e9-zop"/>
+                        <outlet property="_nameTextField" destination="fae-19-wPS" id="n50-Cw-R2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83W-yQ-115" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="-522"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RqC-vJ-uKQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lna-7g-lbj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1rq-Mk-hdc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="xuL-75-nZw"/>
+                        <segue destination="hLq-QF-QzB" kind="relationship" relationship="viewControllers" id="oRg-QH-jt7"/>
+                        <segue destination="6ly-rL-Cb5" kind="relationship" relationship="viewControllers" id="Uc9-bl-o4f"/>
+                        <segue destination="9GJ-Bd-C9s" kind="relationship" relationship="viewControllers" id="w9z-iq-Xbg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Os9-9o-rfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="291"/>
+        </scene>
+        <!--图片持久化-->
+        <scene sceneID="aHf-j3-9jk">
+            <objects>
+                <viewController id="6ly-rL-Cb5" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w95-H6-kLC"/>
+                        <viewControllerLayoutGuide type="bottom" id="iK1-lS-iSI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eqT-Lm-n8v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-7h-Rfz">
+                                <rect key="frame" x="174" y="138" width="252" height="115"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="F9o-D6-xVK"/>
+                                    <constraint firstAttribute="height" constant="115" id="NQG-y9-Uxz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="DYg-7h-Rfz" secondAttribute="centerY" constant="104.5" id="Av2-4G-a3O"/>
+                            <constraint firstAttribute="centerX" secondItem="DYg-7h-Rfz" secondAttribute="centerX" constant="-0.5" id="UMO-C2-1fx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="图片持久化" id="sRN-G8-M25"/>
+                    <connections>
+                        <outlet property="_imageView" destination="DYg-7h-Rfz" id="wNf-Nk-5LT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5s-Fa-y8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="1047"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nNB-1o-mui">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--主页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWk-Tq-fXM">
+                                <rect key="frame" x="32" y="329" width="37" height="30"/>
+                                <animations/>
+                                <state key="normal" title="动画1"/>
+                                <connections>
+                                    <action selector="coreAnimation1" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bV-s8-7TP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djk-Sn-mqu">
+                                <rect key="frame" x="141" y="329" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="动画2"/>
+                                <connections>
+                                    <action selector="coreAnimation2" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWd-2h-kb1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7l-N3-8j5">
+                                <rect key="frame" x="137" y="408" width="40" height="30"/>
+                                <animations/>
+                                <state key="normal" title="动画4"/>
+                                <connections>
+                                    <segue destination="XsE-AM-TOa" kind="push" identifier="tran" animates="NO" id="lhr-cD-zzi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHW-cs-336">
+                                <rect key="frame" x="32" y="408" width="40" height="30"/>
+                                <animations/>
+                                <state key="normal" title="动画3"/>
+                                <connections>
+                                    <action selector="coreAnimation3" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftD-eK-ufF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="主页" id="Mjx-YU-ojw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rSC-u8-ulx">
+            <objects>
+                <viewController id="XsE-AM-TOa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lh0-NK-WVE"/>
+                        <viewControllerLayoutGuide type="bottom" id="apo-2x-OGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mzz-dC-wUT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pw-gS-aOa">
+                                <rect key="frame" x="112" y="269" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9A8-Au-3nh">
+                                <rect key="frame" x="70" y="373" width="150" height="2"/>
+                                <animations/>
+                            </progressView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.52059085839999997" blue="0.30348301319999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lYF-28-K2q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioh-yo-I8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="345"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ni9-5V-NUd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nNB-1o-mui" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T9n-ne-qf3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5JA-9P-M8E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avn-jc-kJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.53333333333333" y="345.5333333333333"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,19 @@
+//
+//  MyTableViewCell.h
+//  New UI
+//
+//  Created by apple on 15/11/16.
+//  Copyright © 2015年 apple. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface MyTableViewCell : UITableViewCell
+
+
+@property (weak, nonatomic) IBOutlet UILabel *MyLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *MyImageView;
+
+
+@end

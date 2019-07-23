@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1878914B1C4E611A0091D9BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878914A1C4E611A0091D9BF /* main.m */; };
+		1878914E1C4E611A0091D9BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878914D1C4E611A0091D9BF /* AppDelegate.m */; };
+		187891541C4E611A0091D9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187891521C4E611A0091D9BF /* Main.storyboard */; };
+		187891561C4E611A0091D9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187891551C4E611A0091D9BF /* Assets.xcassets */; };
+		187891591C4E611A0091D9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187891571C4E611A0091D9BF /* LaunchScreen.storyboard */; };
+		187891621C4E614F0091D9BF /* SendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187891611C4E614F0091D9BF /* SendViewController.m */; };
+		187891651C4E632D0091D9BF /* ReceiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187891641C4E632D0091D9BF /* ReceiveViewController.m */; };
+		83F2E0321C4F245A006B4A0B /* ChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E0311C4F245A006B4A0B /* ChangeViewController.m */; };
+		83F2E0341C4F26E3006B4A0B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F2E0331C4F26E3006B4A0B /* libsqlite3.0.tbd */; };
+		83F2E03F1C4F27C8006B4A0B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E0361C4F27C8006B4A0B /* FMDatabase.m */; };
+		83F2E0401C4F27C8006B4A0B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E0381C4F27C8006B4A0B /* FMDatabaseAdditions.m */; };
+		83F2E0411C4F27C8006B4A0B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E03A1C4F27C8006B4A0B /* FMDatabasePool.m */; };
+		83F2E0421C4F27C8006B4A0B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E03C1C4F27C8006B4A0B /* FMDatabaseQueue.m */; };
+		83F2E0431C4F27C8006B4A0B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E03E1C4F27C8006B4A0B /* FMResultSet.m */; };
+		83F2E0461C4F2DF0006B4A0B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E0451C4F2DF0006B4A0B /* SearchViewController.m */; };
+		83F2E0491C4F6B27006B4A0B /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2E0481C4F6B27006B4A0B /* DeleteViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187891461C4E61190091D9BF /* HZWSQLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZWSQLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1878914A1C4E611A0091D9BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1878914C1C4E611A0091D9BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1878914D1C4E611A0091D9BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		187891531C4E611A0091D9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		187891551C4E611A0091D9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187891581C4E611A0091D9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1878915A1C4E611A0091D9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187891601C4E614F0091D9BF /* SendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendViewController.h; sourceTree = "<group>"; };
+		187891611C4E614F0091D9BF /* SendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendViewController.m; sourceTree = "<group>"; };
+		187891631C4E632D0091D9BF /* ReceiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiveViewController.h; sourceTree = "<group>"; };
+		187891641C4E632D0091D9BF /* ReceiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiveViewController.m; sourceTree = "<group>"; };
+		83F2E0301C4F245A006B4A0B /* ChangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeViewController.h; sourceTree = "<group>"; };
+		83F2E0311C4F245A006B4A0B /* ChangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeViewController.m; sourceTree = "<group>"; };
+		83F2E0331C4F26E3006B4A0B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		83F2E0351C4F27C8006B4A0B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		83F2E0361C4F27C8006B4A0B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		83F2E0371C4F27C8006B4A0B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		83F2E0381C4F27C8006B4A0B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		83F2E0391C4F27C8006B4A0B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		83F2E03A1C4F27C8006B4A0B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		83F2E03B1C4F27C8006B4A0B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		83F2E03C1C4F27C8006B4A0B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		83F2E03D1C4F27C8006B4A0B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		83F2E03E1C4F27C8006B4A0B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		83F2E0441C4F2DF0006B4A0B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		83F2E0451C4F2DF0006B4A0B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		83F2E0471C4F6B27006B4A0B /* DeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteViewController.h; sourceTree = "<group>"; };
+		83F2E0481C4F6B27006B4A0B /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187891431C4E61190091D9BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F2E0341C4F26E3006B4A0B /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1878913D1C4E61190091D9BF = {
+			isa = PBXGroup;
+			children = (
+				83F2E0331C4F26E3006B4A0B /* libsqlite3.0.tbd */,
+				187891481C4E61190091D9BF /* HZWSQLDemo */,
+				187891471C4E61190091D9BF /* Products */,
+				83F2E0351C4F27C8006B4A0B /* FMDatabase.h */,
+				83F2E0361C4F27C8006B4A0B /* FMDatabase.m */,
+				83F2E0371C4F27C8006B4A0B /* FMDatabaseAdditions.h */,
+				83F2E0381C4F27C8006B4A0B /* FMDatabaseAdditions.m */,
+				83F2E0391C4F27C8006B4A0B /* FMDatabasePool.h */,
+				83F2E03A1C4F27C8006B4A0B /* FMDatabasePool.m */,
+				83F2E03B1C4F27C8006B4A0B /* FMDatabaseQueue.h */,
+				83F2E03C1C4F27C8006B4A0B /* FMDatabaseQueue.m */,
+				83F2E03D1C4F27C8006B4A0B /* FMResultSet.h */,
+				83F2E03E1C4F27C8006B4A0B /* FMResultSet.m */,
+			);
+			sourceTree = "<group>";
+		};
+		187891471C4E61190091D9BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187891461C4E61190091D9BF /* HZWSQLDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187891481C4E61190091D9BF /* HZWSQLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1878914C1C4E611A0091D9BF /* AppDelegate.h */,
+				1878914D1C4E611A0091D9BF /* AppDelegate.m */,
+				187891601C4E614F0091D9BF /* SendViewController.h */,
+				187891611C4E614F0091D9BF /* SendViewController.m */,
+				187891631C4E632D0091D9BF /* ReceiveViewController.h */,
+				187891641C4E632D0091D9BF /* ReceiveViewController.m */,
+				83F2E0471C4F6B27006B4A0B /* DeleteViewController.h */,
+				83F2E0481C4F6B27006B4A0B /* DeleteViewController.m */,
+				83F2E0301C4F245A006B4A0B /* ChangeViewController.h */,
+				83F2E0311C4F245A006B4A0B /* ChangeViewController.m */,
+				83F2E0441C4F2DF0006B4A0B /* SearchViewController.h */,
+				83F2E0451C4F2DF0006B4A0B /* SearchViewController.m */,
+				187891521C4E611A0091D9BF /* Main.storyboard */,
+				187891551C4E611A0091D9BF /* Assets.xcassets */,
+				187891571C4E611A0091D9BF /* LaunchScreen.storyboard */,
+				1878915A1C4E611A0091D9BF /* Info.plist */,
+				187891491C4E611A0091D9BF /* Supporting Files */,
+			);
+			path = HZWSQLDemo;
+			sourceTree = "<group>";
+		};
+		187891491C4E611A0091D9BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1878914A1C4E611A0091D9BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187891451C4E61190091D9BF /* HZWSQLDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1878915D1C4E611A0091D9BF /* Build configuration list for PBXNativeTarget "HZWSQLDemo" */;
+			buildPhases = (
+				187891421C4E61190091D9BF /* Sources */,
+				187891431C4E61190091D9BF /* Frameworks */,
+				187891441C4E61190091D9BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZWSQLDemo;
+			productName = HZWSQLDemo;
+			productReference = 187891461C4E61190091D9BF /* HZWSQLDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1878913E1C4E61190091D9BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					187891451C4E61190091D9BF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X5QV65KZF8;
+					};
+				};
+			};
+			buildConfigurationList = 187891411C4E61190091D9BF /* Build configuration list for PBXProject "HZWSQLDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1878913D1C4E61190091D9BF;
+			productRefGroup = 187891471C4E61190091D9BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187891451C4E61190091D9BF /* HZWSQLDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187891441C4E61190091D9BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187891591C4E611A0091D9BF /* LaunchScreen.storyboard in Resources */,
+				187891561C4E611A0091D9BF /* Assets.xcassets in Resources */,
+				187891541C4E611A0091D9BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187891421C4E61190091D9BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F2E0321C4F245A006B4A0B /* ChangeViewController.m in Sources */,
+				187891651C4E632D0091D9BF /* ReceiveViewController.m in Sources */,
+				187891621C4E614F0091D9BF /* SendViewController.m in Sources */,
+				83F2E03F1C4F27C8006B4A0B /* FMDatabase.m in Sources */,
+				83F2E0431C4F27C8006B4A0B /* FMResultSet.m in Sources */,
+				1878914E1C4E611A0091D9BF /* AppDelegate.m in Sources */,
+				83F2E0411C4F27C8006B4A0B /* FMDatabasePool.m in Sources */,
+				83F2E0401C4F27C8006B4A0B /* FMDatabaseAdditions.m in Sources */,
+				83F2E0461C4F2DF0006B4A0B /* SearchViewController.m in Sources */,
+				1878914B1C4E611A0091D9BF /* main.m in Sources */,
+				83F2E0421C4F27C8006B4A0B /* FMDatabaseQueue.m in Sources */,
+				83F2E0491C4F6B27006B4A0B /* DeleteViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		187891521C4E611A0091D9BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187891531C4E611A0091D9BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		187891571C4E611A0091D9BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187891581C4E611A0091D9BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1878915B1C4E611A0091D9BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1878915C1C4E611A0091D9BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1878915E1C4E611A0091D9BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HZWSQLDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ben.HZWSQLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1878915F1C4E611A0091D9BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HZWSQLDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ben.HZWSQLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187891411C4E61190091D9BF /* Build configuration list for PBXProject "HZWSQLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1878915B1C4E611A0091D9BF /* Debug */,
+				1878915C1C4E611A0091D9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1878915D1C4E611A0091D9BF /* Build configuration list for PBXNativeTarget "HZWSQLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1878915E1C4E611A0091D9BF /* Debug */,
+				1878915F1C4E611A0091D9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1878913E1C4E61190091D9BF /* Project object */;
+}

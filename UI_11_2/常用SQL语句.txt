@@ -1,0 +1,48 @@
+1.创建表
+create table if not exists Users ( uid integer primary key, name text, age integer, height double, is_married boolean )
+
+2.插入记录
+insert into Users ( name, age, height, is_married ) values ( 'Wong', 40, 1.5, 0 )
+
+insert into Users ( name, age, height, is_married ) values ( 'ASDFG', 18, 1.9, 1 )
+
+
+3.查询语句
+select name, age from Users
+select * from Users
+select name from Users where age >= 18 and is_married = 1
+select * from Users where uid = 1
+
+4.修改记录
+update Users set is_married = 0 where uid = 2
+
+
+5.删除记录
+delete from Users where name = 'Wong'
+delete from Users
+
+6.删除表
+drop table Users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

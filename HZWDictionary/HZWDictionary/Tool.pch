@@ -1,0 +1,20 @@
+//
+//  Tool.pch
+//  HZWDictionary
+//
+//  Created by Gemll on 16/4/11.
+//  Copyright © 2016年 Huangzhiwen. All rights reserved.
+//
+
+#ifndef Tool_pch
+#define Tool_pch
+
+#import <AFNetworking.h>
+#import <GVUserDefaults.h>
+#import <Mantle.h>
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <MJRefresh.h>
+#import <IQKeyboardManager.h>
+
+#endif /* Tool_pch */

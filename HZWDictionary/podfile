@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+pod 'AFNetworking', '~>2.5.2'
+pod 'Mantle', '~>1.0'
+pod 'MBProgressHUD'
+pod 'MJRefresh'
+pod 'MMPlaceHolder'
+pod 'IQKeyboardManager'
+pod 'JMRoundedCorner'
+pod 'Masonry'
+pod 'GVUserDefaults'

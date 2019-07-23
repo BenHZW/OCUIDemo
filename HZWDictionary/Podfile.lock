@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - GVUserDefaults (1.0.2)
+  - IQKeyboardManager (3.3.7)
+  - JMRoundedCorner (0.0.1)
+  - Mantle (1.5.6):
+    - Mantle/extobjc (= 1.5.6)
+  - Mantle/extobjc (1.5.6)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.0)
+  - MMPlaceHolder (1.9)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.2)
+  - GVUserDefaults
+  - IQKeyboardManager
+  - JMRoundedCorner
+  - Mantle (~> 1.0)
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - MMPlaceHolder
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JMRoundedCorner: 9f037062ebff6cf5996bb2d3802bda9bf5216584
+  Mantle: a197db93e0f1e36194b1fdbc078219a8492eaef2
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  MMPlaceHolder: 40212b9dfe8760134b1b2fce3232f0d46200178f
+
+COCOAPODS: 0.39.0
